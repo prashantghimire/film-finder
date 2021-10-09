@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="header-image-wrapper">
+      <img src="assets/images/title_text.svg">
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-input placeholder="Search by Title of Movie or Show" [(ngModel)]="searchValue"></ion-input>
+    <ion-icon name="search-outline" slot="end" (click)="onSearch()"></ion-icon>
+  </ion-item>
+
+  <br>
+
+  <ion-card *ngIf="success === false">
+    <ion-card-header>
+      <ion-card-title style="text-align: center">No movies found</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-grid *ngIf="success">
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <ion-img [src]="movie.Poster"></ion-img>
+
+          <ion-card-header>
+            <ion-card-title>{{movie.Title}} ({{movie.Year}})</ion-card-title>
+            <ion-card-subtitle>{{movie.Runtime}} | {{movie.Rated}} | {{movie.Genre}}</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            {{ (movie.Plot.length > 120) ? (movie.Plot | slice:0:120) + '...' : (movie.Plot) }}
+          </ion-card-content>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

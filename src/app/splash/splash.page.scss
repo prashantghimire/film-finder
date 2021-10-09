@@ -1,0 +1,17 @@
+ion-content {
+  --background: #3D3D3D;
+  --overflow: hidden;
+}
+
+.logo-wrapper {
+  width: 250px;
+  height: 250px;
+  margin-left: calc(50% - 125px);
+  margin-top: calc(80%);
+  text-align: center;
+}
+
+ion-spinner {
+  margin-top: 10px;
+  color: #fff;
+}

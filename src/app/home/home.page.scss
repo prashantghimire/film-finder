@@ -1,0 +1,144 @@
+.like-col {
+  text-align: right;
+
+  span {
+    position: relative;
+    top: -2px;
+    font-size: 16px;
+  }
+}
+
+ion-icon {
+  font-size: 18px;
+}
+
+ion-content {
+  --background: #3D3D3D;
+}
+
+ion-toolbar {
+  --ion-toolbar-background: #3D3D3D;
+  text-align: center;
+}
+
+ion-searchbar {
+  --background: white !important;
+  --cancel-button-color: #fff;
+}
+
+ion-card {
+  --ion-background-color: #3D3D3D;
+  box-shadow: none;
+  color: #fff;
+  margin: 0;
+
+  h4 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #333;
+  }
+}
+
+ion-grid {
+  padding: 0;
+}
+
+ion-col {
+  margin: 0;
+  padding: 0;
+}
+
+ion-card-content {
+  //padding: 0;
+  color: #333;
+}
+
+ion-icon[name='heart'] {
+  color: #CC2427;
+}
+
+ion-item {
+  --background: white;
+  --inner-border-width: 0;
+  border-radius: 15px;
+  left: 10px;
+  width: calc(100% - 20px);
+  margin-top: 10px;
+}
+
+ion-icon[name='search-outline'] {
+  padding: 10px;
+  margin: 0;
+  color: #3D3D3D;
+}
+
+.hr-divider {
+  margin: 10px;
+  height: 1px;
+  background: #3D3D3D;
+}
+
+.header-image-wrapper {
+  img {
+    margin-top: 10px;
+    width: 60%;
+  }
+}
+
+ion-label span {
+  padding-left: 5px;
+  color: #111;
+}
+
+ion-img {
+  padding: 5px;
+  img {
+    box-shadow: -1px 0px 5px -1px #333;
+  }
+}
+
+ion-card-title {
+  font-size: 16px;
+  text-align: center;
+}
+
+ion-card-subtitle {
+  font-size: 12px;
+  text-align: center;
+}
+
+ion-card-header {
+  padding: 5px;
+}
+
+ion-card-content {
+  font-size: 12px;
+  padding: 5px;
+}
+
+ion-card-title, ion-card-subtitle, ion-card-content {
+  color: #fff;
+  text-align: left;
+}
+
+ion-card-title {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+ion-card-subtitle {
+  font-size: 15px;
+  text-transform: none;
+  font-weight: 600;
+}
+
+ion-card-content {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+ion-col:nth-child(2n+1) {
+  margin-left: 5px;
+}
